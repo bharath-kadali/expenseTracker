@@ -34,5 +34,5 @@ The **Personal Budget and Expense Tracker** is a web-based application that help
 - Dark mode support.
 
 ---
-### Developed by: [Your Name]
+### Developed by: Bharath Kadali
 
