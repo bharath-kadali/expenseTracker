@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        
+        <div class="settings">
+            <label>Preferred Currency:
+                <select id="preferredCurrency">
+                    <option value="USD">United States Dollar</option>
+                    <option value="EUR">Euro</option>
+                    <option value="JPY">Japanese Yen</option>
+                    <option value="INR">Indian Rupee</option>
+                    <option value="CAD">Canadian Dollar</option>
+                    <option value="AUD">Australian Dollar</option>
+                    <option value="GBP">British Pound</option>
+                    <option value="CNY">Chinese Yuan</option>
+                </select>
+            </label>
+        </div>
+
+        <form id="expenseForm">
+            <div class="form-group">
+                <input type="number" id="amount" name="amount" required placeholder="Amount">
+                <select id="currency" name="currency">
+                    <option value="USD">United States Dollar</option>
+                    <option value="EUR">Euro</option>
+                    <option value="JPY">Japanese Yen</option>
+                    <option value="INR">Indian Rupee</option>
+                    <option value="CAD">Canadian Dollar</option>
+                    <option value="AUD">Australian Dollar</option>
+                    <option value="GBP">British Pound</option>
+                    <option value="CNY">Chinese Yuan</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="text" id="category" name="category" required placeholder="Category">
+                <input type="date" id="date" name="date" required>
+            </div>
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <div class="expenses">
+            <table id="expensesTable">
+                <thead>
+                    <tr>
+                        <th>Amount Spent</th>
+                        <th>Converted Amount</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic content will go here -->
+                </tbody>
+            </table>
+            <!-- Total Amount Spent Section -->
+            <div class="total-amount">
+                <strong>Total Amount Spent:</strong>
+                <span id="totalAmount">0.00</span> <span id="totalCurrency">USD</span>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="chart"></canvas>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

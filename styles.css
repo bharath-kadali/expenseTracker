@@ -1,0 +1,198 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #f5f0e1;
+    color: #5a3e2b;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff8e7;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #d4a373;
+}
+
+/* Header */
+h1 {
+    color: #6d4c3d;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+/* Settings Section */
+.settings {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #ede0d4;
+    border-radius: 10px;
+    border: 1px solid #d4a373;
+}
+
+.settings select {
+    padding: 8px;
+    border: 1px solid #d4a373;
+    border-radius: 4px;
+    background: #fff8e7;
+    color: #5a3e2b;
+}
+
+/* Form Styling */
+#expenseForm {
+    background: #ede0d4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #d4a373;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d4a373;
+    border-radius: 4px;
+    background: #fff8e7;
+    color: #5a3e2b;
+}
+
+button[type="submit"] {
+    background: #a67c52;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: #8a6340;
+    box-shadow: 0 0 10px rgba(166, 124, 82, 0.5);
+}
+
+/* Table Styling */
+.expenses {
+    background: #ede0d4;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #d4a373;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px 8px;
+    border: 1px solid #d4a373;
+    text-align: left;
+}
+
+th {
+    background: #a67c52;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f5e6ca;
+}
+
+tr:hover {
+    background: #e3cba7;
+}
+
+.edit-btn, .delete-btn {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.edit-btn {
+    background: #6d9773;
+    color: white;
+}
+
+.delete-btn {
+    background: #c25e47;
+    color: white;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    box-shadow: 0 0 10px rgba(166, 124, 82, 0.5);
+}
+
+/* Chart Container */
+.chart-container {
+    margin-top: 30px;
+    background: #ede0d4;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #d4a373;
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 400px;
+}
+
+/* Total Amount Section */
+.total-amount {
+    margin-top: 20px;
+    padding: 15px;
+    background: #d4a373;
+    color: white;
+    border-radius: 8px;
+    text-align: right;
+    font-size: 1.2em;
+}
+
+.total-amount strong {
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .form-group {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    input, select {
+        font-size: 16px;
+    }
+    
+    th, td {
+        padding: 8px 4px;
+        font-size: 14px;
+    }
+}
