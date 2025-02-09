@@ -1,5 +1,4 @@
-/* Basic Reset */
-* {
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,7 +12,6 @@ body {
     padding: 20px;
 }
 
-/* Container */
 .container {
     max-width: 1450px;
     margin: 0 auto;
@@ -24,7 +22,6 @@ body {
     border: 2px solid #d4a373;
 }
 
-/* Header */
 h1 {
     color: #6d4c3d;
     font-family: 'Courier New', Courier, monospace;
@@ -32,7 +29,6 @@ h1 {
     margin-bottom: 15px;
 }
 
-/* Settings Section */
 .settings {
     margin-bottom: 20px;
     padding: 15px;
@@ -49,7 +45,6 @@ h1 {
     color: #5a3e2b;
 }
 
-/* Form Styling */
 #expenseForm {
     background: #ede0d4;
     padding: 20px;
@@ -90,7 +85,6 @@ button[type="submit"]:hover {
     box-shadow: 0 0 10px rgba(166, 124, 82, 0.5);
 }
 
-/* Table Styling */
 .expenses {
     background: #ede0d4;
     padding: 20px;
@@ -146,7 +140,6 @@ tr:hover {
     box-shadow: 0 0 10px rgba(166, 124, 82, 0.5);
 }
 
-/* Chart Container */
 .chart-container {
     margin-top: 30px;
     background: #ede0d4;
@@ -161,7 +154,6 @@ canvas {
     max-height: 400px;
 }
 
-/* Total Amount Section */
 .total-amount {
     margin-top: 20px;
     padding: 15px;
@@ -176,7 +168,6 @@ canvas {
     margin-right: 10px;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
     .container {
         padding: 10px;
