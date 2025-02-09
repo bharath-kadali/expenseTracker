@@ -27,12 +27,6 @@ The **Personal Budget and Expense Tracker** is a web-based application that help
 5. **Delete expenses** when necessary.
 6. **See the total expenses** updated dynamically below the expense table.
 
-## Future Enhancements
-- User authentication for multi-device sync.
-- Advanced analytics and budget-setting features.
-- Export and import options for expense data.
-- Dark mode support.
-
 ---
 ### Developed by: Bharath Kadali
 
